@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
+import MyComponent from './Example/MyComponent';
 
 function App() {
   return (
@@ -16,7 +17,14 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a>    
+
+        {/* <MyComponent/> Here is shortcut declare  */}
+
+        <MyComponent> {/* Here is full declare, use when it has children */}
+          
+        </MyComponent>
+
       </header>
     </div>
   );
