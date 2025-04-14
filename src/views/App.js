@@ -19,11 +19,12 @@ function App() {
           Learn React
         </a>    
 
-        {/* <MyComponent/> Here is shortcut declare  */}
+        {/* Here is shortcut declare  */}
+        <MyComponent/> 
 
-        <MyComponent> {/* Here is full declare, use when it has children */}
-          
-        </MyComponent>
+        {/* Here is full declare, use when it has children */}
+
+        {/* <MyComponent> </MyComponent> */}
 
       </header>
     </div>
