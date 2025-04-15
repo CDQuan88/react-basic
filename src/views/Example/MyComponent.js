@@ -1,4 +1,6 @@
 import React from "react";
+import ChildComponent from "./ChildComponent";
+
 /*
   2 component: class component and function component(function, arrow)
   using JSX
@@ -50,6 +52,10 @@ class MyComponent extends React.Component {
                     onClick={(event)=> this.handleSubmit(event)}
                     />
                 </form>
+
+            <ChildComponent name = {'child one'}/>
+            <ChildComponent name = {'child two'}/>
+            <ChildComponent name = {'child three'}/>
 
             </>
 
