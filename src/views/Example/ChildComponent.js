@@ -29,14 +29,29 @@ class ChildComponent extends React.Component {
 
     handleSubmit = (event) =>{
         event.preventDefault()
-        console.log('<<< check data: ', this.state)
+        console.log('<<< check data input: ', this.state)
     }
+
     render() {
-        console.log('>>> call render: ', this.state)
+        console.log('>>> check props: ', this.props)
+
+        //key: value
+        let {name, age, address, arrJobs} = this.props
         return (
             <>
-                <div>Child component: {this.props.name}</div>
+                <div>Child component: {name} - {age} - {address}</div>
+                <div className="job-lists">
+                    {
+                        arrJobs.map((item,index) => {
+                            return (
+                                <div key={item.id}>
+                                    {item.title} - {item.salary}
+                                </div>
+                            )
+                        })
+                    }
 
+                </div>
             </>
 
 
