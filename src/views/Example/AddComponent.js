@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast } from 'react-toastify';
 
 class AddComponent extends React.Component {
 
@@ -28,7 +29,7 @@ class AddComponent extends React.Component {
         }
         console.log('<<< check data: ', this.state)
         this.props.addNewJob({
-            id: Math.floor(Math.random() * 1001),
+            id: Math.floor(Math.random() * 10000),
             title: this.state.title,
             salary: this.state.salary
         })
