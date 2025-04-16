@@ -1,4 +1,5 @@
 import React from "react";
+import './Demo.scss'
 /*
   2 component: class component and function component(function, arrow)
   using JSX
@@ -33,7 +34,8 @@ class ChildComponent extends React.Component {
             <>
                 {showJobs === false ?
                     <div>
-                        <button onClick={() => this.handleShowHide()}>Show</button>
+                        <button className="btn-show"
+                         onClick={() => this.handleShowHide()}>Show</button>
                     </div>
                 :
                     <>

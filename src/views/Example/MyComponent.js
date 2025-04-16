@@ -36,8 +36,16 @@ class MyComponent extends React.Component {
         let currentJobs = this.state.arrJobs;
         currentJobs = currentJobs.filter(item => item.id !== job.id)
         this.setState({
-            arrJobs:currentJobs
+            arrJobs: currentJobs
         })
+    }
+
+    componentDidMount() {
+        console.log('>> run component did mount')
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('>> run did update', 'prevState: ', prevState, 'currentState: ', this.state)
     }
 
     render() {
